@@ -67,17 +67,17 @@ const CreateTask = () => {
         onSubmit={(e) => {
           submitHandler(e)
         }}
-        className="bg-[#262424] text-white h-full flex justify-between  px-5 py-1"
+        className="bg-[#7863ac] rounded-b-4xl rounded-r-4xl text-white h-full flex justify-between px-5 py-1"
       >
         <div className="w-[45%]">
-          <div className="my-2 ">
+          <div className="my-2">
             <h2 className="font-medium py-0.5 ">Task Title</h2>
             <input
               value={title}
               onChange={(e) => {
                 setTaskTitle(e.target.value);
               }}
-              className="bg-[#353434] px-2 py-1 w-full outline-none text-xs rounded-[3px]"
+              className="bg-[#8b77b6] px-2 py-1 w-full outline-none text-xs rounded-[3px]"
               type="text"
               placeholder="Make a UI design"
             />
@@ -89,7 +89,7 @@ const CreateTask = () => {
               onChange={(e) => {
                 setTaskDate(e.target.value);
               }}
-              className="bg-[#353434] px-2 py-1 w-full text-xs rounded-[3px]"
+              className="bg-[#8b77b6] px-2 py-1 w-full text-xs rounded-[3px]"
               type="date"
               placeholder="Make a UI design"
             />
@@ -101,7 +101,7 @@ const CreateTask = () => {
               onChange={(e) => {
                 setAsignTo(e.target.value);
               }}
-              className="bg-[#353434] px-2 py-1 w-full text-xs rounded-[3px]"
+              className="bg-[#8b77b6] px-2 py-1 w-full text-xs rounded-[3px]"
               type="text"
               placeholder="Employee Name..."
             />
@@ -113,7 +113,7 @@ const CreateTask = () => {
               onChange={(e) => {
                 setTaskCategory(e.target.value);
               }}
-              className="bg-[#353434] px-2 py-1 w-full text-xs rounded-[3px]"
+              className="bg-[#8b77b6] px-2 py-1 w-full text-xs rounded-[3px]"
               type="text"
               placeholder="Design, Development etc..."
             />
@@ -127,7 +127,7 @@ const CreateTask = () => {
               onChange={(e) => {
                 setTaskDescription(e.target.value);
               }}
-              className="bg-[#353434] px-2 py-1 w-full h-45 text-xs rounded-[3px]"
+              className="bg-[#8b77b6] px-2 py-1 w-full h-45 text-xs rounded-[3px]"
               placeholder="Detailed description of your newTask. [Max 500 words]"
               name="description"
               cols="30"
@@ -136,7 +136,7 @@ const CreateTask = () => {
               maxLength={500}
             ></textarea>
           </div>
-          <div className="bg-red-500 justify-center flex rounded-[2px] text-[15px] my-2 p-1">
+          <div className="bg-[#4e0c76] justify-center flex rounded-[2px] text-[15px] my-2 p-1">
             <button type="submit">Create Task</button>
           </div>
         </div>

@@ -13,13 +13,13 @@ const Login = ({ handleLogin }) => {
     handleLogin(email, password);
     SetEmail("");
     SetPassword("");
-  };
+  }; 
 
   return (
-    <div className="flex  h-screen w-screen items-center justify-center ">
-      <div className="border-2 border-red-500 p-5 py-20 rounded-3xl">
-        <h1 className="text-2xl mb-20 font-bold text-red-500">Login_in</h1>
-        <form
+    <div className="flex h-screen w-screen items-center justify-center ">
+      <div className="p-5 py-20 rounded-3xl bg-[color:white]">
+        <h1 className="text-4xl mb-15 font-bold text-[#3e336a]">Login</h1>
+        <form 
           onSubmit={(e) => {
             submitHandler(e);
           }}
@@ -29,11 +29,11 @@ const Login = ({ handleLogin }) => {
           <input
             value={email}
             onChange={(e) => {
-              // console.log(e.target.value)
+              // cosnsole.log(e.target.value)
               SetEmail(e.target.value);
             }}
             type="email"
-            className="border-2 text-white border-red-500 outline-none rounded-lg px-1 my-1"
+            className="border-2 text-[#3e336a] border-[#3e336a] outline-none rounded-lg px-1 my-1"
             placeholder="Enter your email"
             required
           />
@@ -43,11 +43,11 @@ const Login = ({ handleLogin }) => {
               SetPassword(e.target.value);
             }}
             type="password"
-            className="border-2 text-white  border-red-500 outline-none rounded-lg px-1 my-1"
+            className="border-2 text-[#3e336a]  border-[#3e336a] outline-none rounded-lg px-1 my-1"
             placeholder="Enter password"
             required
           />
-          <button className="text-white bg-red-600 rounded-2xl px-3 py-1 hover:bg-red-700 my-1">
+          <button className="text-white bg-[#592dbe] rounded-2xl px-3 py-1 hover:bg-[#6740c2] my-1">
             Log in
           </button>
         </form>

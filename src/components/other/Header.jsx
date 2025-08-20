@@ -20,8 +20,8 @@ const Header = (props) => {
   }
 
   return (
-    <div className="flex items-center justify-between mb-6 text-white">
-      <h1 className="text-xl font-semibold">
+    <div className="flex items-center justify-between mb-2 text-black">
+      <h1 className="text-5xl font-bold">
         hii <br /> <span className="text-2xl">{props.data?.firstName} 👋</span>
       </h1>
       {/* {data?.firstName} */}

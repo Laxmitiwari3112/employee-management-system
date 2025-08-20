@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 body{
-    background: rgb(28, 26, 34);
+    background: radial-gradient(circle, rgb(34, 13, 149) 0%, rgba(240,240,240,1) 100%);
 }
 #tasklist, .alltask::-webkit-scrollbar{
     display: none;
